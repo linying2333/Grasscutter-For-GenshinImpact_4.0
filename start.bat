@@ -1,38 +1,38 @@
 @echo off
-title ³ı²İ»ú(Grasscutter)1.7.0ÓÃÓÚÔ­Éñ4.0°æ/Grasscutter 1.7.0 For Genshin Impact 4.0
-:: ·şÎñÆ÷Æô¶¯²ÎÊıÉèÖÃ
+title é™¤è‰æœº(Grasscutter)1.7.0ç”¨äºåŸç¥4.0ç‰ˆ/Grasscutter 1.7.0 For Genshin Impact 4.0
+:: æœåŠ¡å™¨å¯åŠ¨å‚æ•°è®¾ç½®
 :: Server startup parameter settings
 set WaitingTime=10
-:: ×Ô¶¯ÖØÆôµÈ´ıÊ±¼ä !!!ÄãÖ»ÄÜÊ¹ÓÃÃëÎªµ¥Î»
+:: è‡ªåŠ¨é‡å¯ç­‰å¾…æ—¶é—´ !!!ä½ åªèƒ½ä½¿ç”¨ç§’ä¸ºå•ä½
 :: Automatic restart waiting time !!!You can only use seconds as a unit
 set Max=6G
-:: ×î´óÄÚ´æ !!!ÄãÖ»ÄÜÊ¹ÓÃM»òÕßGÎªµ¥Î»
+:: æœ€å¤§å†…å­˜ !!!ä½ åªèƒ½ä½¿ç”¨Mæˆ–è€…Gä¸ºå•ä½
 :: Max Memory !!!You can only use M or G as the unit
 :: 1G=1024M
 set Min=1M
-:: ×îĞ¡ÄÚ´æ !!!ÄãÖ»ÄÜÊ¹ÓÃM»òÕßGÎªµ¥Î»
+:: æœ€å°å†…å­˜ !!!ä½ åªèƒ½ä½¿ç”¨Mæˆ–è€…Gä¸ºå•ä½
 :: Min Memory !!!You can only use M or G as the unit
 :: 1G=1024M
 set ServerJava=java
 ::  Server Java Settings file path settings.Normally, you do not need to change this item
-:: ·şÎñÆ÷javaÎÄ¼şÂ·¾¶ÉèÖÃ.Í¨³£Çé¿öÏÂÄúÎŞĞè¸ü¸Ä´ËÏî
+:: æœåŠ¡å™¨javaæ–‡ä»¶è·¯å¾„è®¾ç½®.é€šå¸¸æƒ…å†µä¸‹æ‚¨æ— éœ€æ›´æ”¹æ­¤é¡¹
 set additional=
 :: Additional Java parameters.Normally, you do not need to change this item
-:: ¶îÍâjava²ÎÊı.Í¨³£Çé¿öÏÂÄúÎŞĞè¸ü¸Ä´ËÏî
+:: é¢å¤–javaå‚æ•°.é€šå¸¸æƒ…å†µä¸‹æ‚¨æ— éœ€æ›´æ”¹æ­¤é¡¹
 set jar=grasscutter_1.7.0
-:: ¡±jar¡°¿ÉÖ´ĞĞÎÄ¼şÃû
+:: â€jarâ€œå¯æ‰§è¡Œæ–‡ä»¶å
 :: " Jar "executable file name
 
 :start
 echo.
 echo _______________________________________________________________________
 echo.
-echo ·şÎñÆ÷²ÎÊıÕ¹Ê¾
-echo ×î´óÄÚ´æ£º%Max% / ×îĞ¡ÄÚ´æ£º%Min%
-echo ×Ô¶¯ÖØĞÂÆô¶¯Ê±¼ä£º%WaitingTime%Ãë
-echo ·şÎñÆ÷Java²ÎÊı£º%ServerJava%
-echo ·şÎñÆ÷¶îÍâµÄJavaÆô¶¯²ÎÊı£º%additional%
-echo ¿ÉÖ´ĞĞÎÄ¼şÃû£º%jar%.jar
+echo æœåŠ¡å™¨å‚æ•°å±•ç¤º
+echo æœ€å¤§å†…å­˜ï¼š%Max% / æœ€å°å†…å­˜ï¼š%Min%
+echo è‡ªåŠ¨é‡æ–°å¯åŠ¨æ—¶é—´ï¼š%WaitingTime%ç§’
+echo æœåŠ¡å™¨Javaå‚æ•°ï¼š%ServerJava%
+echo æœåŠ¡å™¨é¢å¤–çš„Javaå¯åŠ¨å‚æ•°ï¼š%additional%
+echo å¯æ‰§è¡Œæ–‡ä»¶åï¼š%jar%.jar
 echo.
 echo _______________________________________________________________________
 echo.
@@ -51,17 +51,17 @@ Echo _______________________________________________________________________
 Echo.
 
 echo.
-echo ·şÎñÆ÷¼ÓÔØÖĞ......
+echo æœåŠ¡å™¨åŠ è½½ä¸­......
 echo Server Loading......
 echo.
 
 %ServerJava% -Xmx%Max% -Xms%Min% %additional% -jar %jar%.jar
 
 echo.
-echo ·şÎñÆ÷ÒÑ¹Ø±Õ
+echo æœåŠ¡å™¨å·²å…³é—­
 echo The server has been shut down
 echo.
-echo µÈ´ı %WaitTime% ºó×Ô¶¯ÖØĞÂÆô¶¯
+echo ç­‰å¾… %WaitingTime% åè‡ªåŠ¨é‡æ–°å¯åŠ¨
 echo Automatically restart after waiting for %WaitingTime%
 echo.
 timeout %WaitingTime% /NOBREAK
